@@ -1,0 +1,23 @@
+{
+  "name": "css3-daily-practice",
+  "version": "1.0.0",
+  "description": "daily practice of css3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubyLiuqq/css3-Daily-Practice.git"
+  },
+  "keywords": [
+    "css3",
+    "animation"
+  ],
+  "author": "rubyliuqq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rubyLiuqq/css3-Daily-Practice/issues"
+  },
+  "homepage": "https://github.com/rubyLiuqq/css3-Daily-Practice#readme"
+}
