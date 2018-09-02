@@ -1,0 +1,43 @@
+html body, .box, .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: bisque;
+}
+
+.box {
+    color: #fff;
+    background: linear-gradient(to right, gold, darkorange);
+    --width: 250px;
+    --height: calc(var(--width) / 3);
+    width: var(--width);
+    height: var(--height);
+    text-align: center;
+    line-height: var(--height);
+    text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.2);
+    border: 1px solid darkgoldenrod;
+    border-radius: 2em;
+    font-size: calc(var(--height) / 2.5);
+    box-shadow: 2px 0 0 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    background: linear-gradient(to right, transparent, white, transparent);
+    transition: 0.5s;
+}
+
+
+
+.box:hover::before {
+    left: 100%;
+}
