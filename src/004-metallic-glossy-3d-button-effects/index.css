@@ -36,8 +36,6 @@ html body, .box, .content {
     transition: 0.5s;
 }
 
-
-
 .box:hover::before {
     left: 100%;
 }
