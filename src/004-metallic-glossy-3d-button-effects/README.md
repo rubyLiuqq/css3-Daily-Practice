@@ -10,4 +10,6 @@
     ![perspectice-origin](http://pe7k320h3.bkt.clouddn.com/cfc39554cf565dd7444ab19611c4587.jpg)
 - transform-style：默认是flat，如果你要在元素上视线3D效果的话，就必须用上transform-style: preserve-3d,否则就只是平面的变换，而不是3D的变换
 
+##### 光泽度使用before 实现，通过hover时改变 left 实现
+
 
