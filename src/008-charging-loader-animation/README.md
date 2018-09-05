@@ -1,5 +1,7 @@
 ## 动画版的充电装载机 说明
 
+![动画版的充电装载机](http://pela5ecqg.bkt.clouddn.com/WechatIMG20.png)
+
 ### 使用 currentColor 扩展颜色级联
     currentColor 只可以在能够接受<color>值的地方使用;当前的标签所继承的文字颜色
 

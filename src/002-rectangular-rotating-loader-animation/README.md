@@ -1,5 +1,7 @@
 ## 矩形旋转装载机动画 说明
 
+![矩形旋转](http://pela5ecqg.bkt.clouddn.com/WechatIMG24.png)
+
 三个大小不同的方框进行旋转
 
 ### CSS 变量

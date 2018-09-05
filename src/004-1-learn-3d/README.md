@@ -1,4 +1,7 @@
 ## 3D 说明
+
+![3D](http://pela5ecqg.bkt.clouddn.com/WechatIMG23.png)
+
 **步骤**
 - 设置容器的透视以及piece盒子的3D属性；
     结果：只看到第6面，因为还是原位置，重叠；

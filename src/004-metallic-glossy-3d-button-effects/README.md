@@ -1,5 +1,7 @@
 ## 具有3D金属光泽的按钮效果 说明
 
+![具有3D金属光泽的按钮效果](http://pela5ecqg.bkt.clouddn.com/WechatIMG27.png)
+
 ### CSS3 玩转3D
 **可以参考004-1来说明3D效果**
 需要了解：透视(perspective)、旋转(rotate)和移动(translate)

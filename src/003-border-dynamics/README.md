@@ -1,5 +1,7 @@
 ## 对角线条纹边框效果 说明
 
+![对角线条纹边框效果](http://pela5ecqg.bkt.clouddn.com/WechatIMG26.png)
+
 利用 linear-gradient 线性变换实现边框的炫酷，实际上是在最外层父级上增加背景色的方式实现
 
 ### 1、box-shadow

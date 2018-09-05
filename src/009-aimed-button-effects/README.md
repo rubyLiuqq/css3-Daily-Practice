@@ -1,5 +1,7 @@
 ## 瞄准文字特效 说明
 
+![瞄准文字特效](http://pela5ecqg.bkt.clouddn.com/WechatIMG19.png)
+
 ### filter 滤镜
 filter: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia() | url();
 

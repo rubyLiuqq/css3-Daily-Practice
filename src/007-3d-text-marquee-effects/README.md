@@ -1,5 +1,7 @@
 ## 3D文字跑马灯效果 说明
 
+![3D文字跑马灯效果](http://pela5ecqg.bkt.clouddn.com/WechatIMG21.png)
+
 transform-origin： 修改旋转的中心
 
 注意： 不添加white-space 时，会出现文案的换行，Hello world 出现断层
