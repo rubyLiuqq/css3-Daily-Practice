@@ -1,0 +1,59 @@
+html body, .circle{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+:root {
+    --innerRadius: 2em;
+}
+
+.circle {
+    position: relative;
+    width: calc(var(--innerRadius) * 2);
+    height: calc(var(--innerRadius) * 2);
+    border-radius: 50%;
+    background-color: lime;
+    box-shadow: 0 0 0 calc(var(--innerRadius) - 0.4em) black,
+				0 0 0 var(--innerRadius) lime;
+}
+
+.circle::before {
+    content: '';
+    position: absolute;
+    border: 4px solid lime;
+    width: calc(var(--innerRadius) * 4);
+    height: calc(var(--innerRadius) * 4);
+    border-radius: 50%;
+    /* background-color: lime; */
+}
+
+.circle::before,
+.circle::after {
+    content: '';
+    position: absolute;
+    border: 2px solid lime;
+    width: calc(var(--innerRadius) * 4);
+    height: calc(var(--innerRadius) * 4);
+    border-radius: 50%;
+    animation: extend 2s ease-out infinite;
+}
+
+.circle::after {
+    animation-delay: 1s;
+}
+
+@keyframes extend {
+    0% {
+        transform: scale(1);
+        filter: opacity(0.9);
+    }
+
+    100% {
+        transform: scale(2);
+        filter: opacity(0);
+    }
+}
