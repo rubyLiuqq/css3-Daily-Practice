@@ -1,6 +1,6 @@
-#### 瞄准文字特效 说明
+## 瞄准文字特效 说明
 
-##### filter 滤镜
+### filter 滤镜
 filter: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia() | url();
 
 - blur(px)：给图像设置高斯模糊，值越大越模糊；不接受百分比。
@@ -16,9 +16,23 @@ filter: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() 
 - url()：URL函数接受一个XML文件，该文件设置了一个SVG滤镜，且可以包含一个锚点来指定一个具体的滤镜元素。
     eg：filter: url(svg-url#element-id)
 
-##### animation 的关键词
-infinite
+### animation 的关键词
+animation: name duration timing-function delay iteration-count direction;
+- animation-duration:	        完成动画所花费的时间，以秒或毫秒计。
+- animation-timing-function:	动画的速度曲线。
+    linear:	                动画从头到尾的速度是相同的。
+    ease:	                  默认。动画以低速开始，然后加快，在结束前变慢。
+    ease-in:	              动画以低速开始。
+    ease-out:	              动画以低速结束。
+    ease-in-out:	          动画以低速开始和结束。
+    cubic-bezier(n,n,n,n):	在 cubic-bezier 函数中自己的值。可能的值是从 0 到 1 的数值。
+    steps([nums], [type]):  阶跃函数，其中type可为start和end
+- animation-delay:	          在动画开始之前的延迟。
+- animation-iteration-count:	动画应该播放的次数。
+    n:          定义动画播放次数的数值。
+    infinite: 	规定动画应该无限次播放。
+- animation-direction:	      是否应该轮流反向播放动画。
+    normal：    	默认值。动画应该正常播放。
+    alternate： 	动画应该轮流反向播放。
 
-alternate
-
-##### BFC
+### BFC

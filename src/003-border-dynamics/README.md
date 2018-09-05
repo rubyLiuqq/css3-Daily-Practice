@@ -1,8 +1,8 @@
-#### 对角线条纹边框效果 说明
+## 对角线条纹边框效果 说明
 
 利用 linear-gradient 线性变换实现边框的炫酷，实际上是在最外层父级上增加背景色的方式实现
 
-##### 1、box-shadow
+### 1、box-shadow
 属性值，顺序还是蛮重要的：offset-x offset-y blur spread color position;
 
 offset-x 正值为右边阴影，offset-y 为正值时为下边阴影；
@@ -13,7 +13,7 @@ inset: 表示内阴影，没有该数值时为内阴影；
 
 阴影可以重叠显示，利用逗号 ， 隔开。
 
-##### 2、linear-gradient
+### 2、linear-gradient
 linear-gradient 线性渐变, radial-gradient 径性渐变(圆圈渐变效果)
 
 0deg 向下，90deg 向左， 180deg 向上， 270deg 向右；

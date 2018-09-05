@@ -1,8 +1,8 @@
-####  说明
+##  说明
 
 三个大小不同的方框进行旋转
 
-#### CSS 变量
+### CSS 变量
 目前CSS变量主要有两种：
   1、变量，可被使用在任意的地方。可使用var()函数使用变量。
     eg：var(--example-variable)会返回--example-variable所对应的值.
@@ -11,7 +11,7 @@
 
 **注意：在之前的标准中，自定义属性以var-作为前缀，后来才改成--前缀。**
 
-##### CSS 变量的层叠与作用域
+### CSS 变量的层叠与作用域
 **局部变量会在作用范围内覆盖全局变量，CSS 变量并不支持 !important 声明**
 ```css
 :root{ --mainColor:red; }
@@ -37,7 +37,7 @@ div{
 }
 ```
 
-##### CSS 变量与计算属性 calc( )
+### CSS 变量与计算属性 calc( )
 ```css
 :root{ --margin: 10px; }
 div{ text-indent: calc(var(--margin)*10); }
