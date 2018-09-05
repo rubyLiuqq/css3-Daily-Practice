@@ -1,0 +1,65 @@
+html body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+.circle {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.circle, 
+.circle::before, 
+.circle::after {
+    --radius: calc(10em - (var(--n) - 1) * 30%);
+    width: var(--radius);
+    height: var(--radius);
+    border: 10px solid;
+    border-radius: 50%;
+    border-color: var(--top-color) transparent var(--bottom-color) transparent;
+    animation: animate ease-in-out infinite alternate;
+    animation-duration: var(--delay-time);
+}
+
+.circle {
+    --n: 1;
+    --top-color: red;
+    --bottom-color: blue;
+    --delay-time: 4s;
+}
+
+.circle::before {
+    --n: 2;
+    --top-color: orange;
+    --bottom-color: cyan;
+    --delay-time: 8s;
+}
+
+.circle::after {
+    --n: 3;
+    --top-color: yellow;
+    --bottom-color: limegreen;
+    --delay-time: 16s;
+}
+
+.circle::before, 
+.circle::after {
+    content: '';
+    position: absolute;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0);
+    }
+	100% {
+		transform: rotate(4turn);
+	}
+}
