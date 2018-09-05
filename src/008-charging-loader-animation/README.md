@@ -10,14 +10,14 @@
 > * background-position：背景图像的位置，左上角；
 > * background-repeat：如何重复背景图像
 > * background-origin：背景图片的定位区域；
-> *          padding-box	  背景图像相对于内边距框来定位。
-> *          border-box	  背景图像相对于边框盒来定位。
-> *         content-box	  背景图像相对于内容框来定位。
+- [x] padding-box	  背景图像相对于内边距框来定位。
+- [x] border-box	  背景图像相对于边框盒来定位。
+- [x] content-box	  背景图像相对于内容框来定位。
 > * background-clip：背景的绘制区域
-> *  background-attachment：背景图像是否固定或者随着页面的其余部分滚动。
-> *          scroll	  默认值。背景图像会随着页面其余部分的滚动而移动。
-> *          fixed	    当页面的其余部分滚动时，背景图像不会移动。
-> *          inherit	  规定应该从父元素继承 background-attachment 属性的设置。
+> * background-attachment：背景图像是否固定或者随着页面的其余部分滚动。
+- [x] scroll	  默认值。背景图像会随着页面其余部分的滚动而移动。
+- [x] fixed	  当页面的其余部分滚动时，背景图像不会移动。
+- [x] inherit	规定应该从父元素继承 background-attachment 属性的设置。
 
 ### font-size
     本案例使用了 font-size 放大了外围div的大小。本质还在探究中。。。。。。。。
