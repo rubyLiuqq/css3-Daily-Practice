@@ -1,0 +1,103 @@
+html body{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+}
+
+.four-zero-four {
+  display: flex;
+  flex-direction: row;
+}
+
+.four, .zero {
+  width: 10em;
+  height: 10em;
+  display: inline-block;
+  margin: 1em;
+  position: relative;
+}
+
+.four span, .zero span {
+  position: absolute;
+  filter: opacity(0.8);
+  transition: 0.3s;
+}
+
+.four span:nth-child(1) {
+  width: 20%;
+  height: 80%;
+  left: 10%;
+  background-color: yellowgreen;
+}
+
+.four span:nth-child(2) {
+  height: 20%;
+  width: 100%;
+  top: 50%;
+  background-color: turquoise;
+}
+
+.four span:nth-child(3) {
+  width: 20%;
+  height: 100%;
+  right: 10%;
+  background-color: pink;
+}
+
+.zero span:nth-child(1), .zero span:nth-child(3) {
+  width: 20%;
+  height: 100%;
+}
+
+.zero span:nth-child(2), .zero span:nth-child(4) {
+  width: 100%;
+  height: 20%;
+}
+
+.zero span:nth-child(1) {
+  left: 10%;
+  background-color: skyblue;
+}
+.zero span:nth-child(2) {
+  top: 10%;
+  background-color: plum;
+}
+.zero span:nth-child(3) {
+  right: 10%;
+  background-color: lightcoral;
+}
+.zero span:nth-child(4) {
+  bottom: 10%;
+  background-color: peachpuff;
+}
+
+.four-zero-four:hover span {
+  background-color: whitesmoke;
+}
+
+.four-zero-four:hover .four span:nth-child(1),
+.four-zero-four:hover .zero span:nth-child(1){
+  left: 0;
+}
+
+.four-zero-four:hover .four span:nth-child(2),
+.four-zero-four:hover .zero span:nth-child(2){
+  top: 0;
+}
+
+.four-zero-four:hover .four span:nth-child(3),
+.four-zero-four:hover .zero span:nth-child(3){
+  right: 0;
+}
+
+.four-zero-four:hover .four span:nth-child(1){
+  top: 20%;
+}
+
+.four-zero-four:hover .zero span:nth-child(4){
+  bottom: 0;
+}
+
