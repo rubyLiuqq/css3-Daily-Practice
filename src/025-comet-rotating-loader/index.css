@@ -1,0 +1,76 @@
+html body, .loading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  margin: 0;
+}
+
+.loading {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.loading .face {
+  position: absolute;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  border-top-color: var(--color);
+  border-left-color: var(--color);
+  animation: animate 3s linear infinite;
+}
+
+.loading .face .circle{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  height: 1px;
+  transform: rotate(calc(var(--deg) - 45deg));
+  transform-origin: left;
+}
+
+.loading .face .circle::after{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color);
+  border-radius: 50%;
+  top: -5px;
+  right: -5px;
+  box-shadow: 0 0 20px var(--color),
+                0 0 40px var(--color),
+                0 0 60px var(--color),
+                0 0 80px var(--color),
+                0 0 100px var(--color),
+                0 0 0 5px rgba(255, 255, 0, 0.1);
+}
+
+
+.face:nth-of-type(1) {
+  width: 100%;
+  height: 100%;
+  --color: gold;
+  --deg: 0deg;
+}
+.face:nth-of-type(2) {
+  width: 70%;
+  height: 70%;
+  --color: lime;
+  --deg: 180deg;
+  animation-direction: reverse;
+}
+
+@keyframes animate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
