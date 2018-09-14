@@ -1,0 +1,48 @@
+html body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(20%, 20%, 20%);
+}
+
+.warming {
+  font-size: 80px;
+  font-weight: bold;
+  font-family: sans-serif;
+  position: relative;
+  padding: 0.6em 0.4em;
+  color: whitesmoke;
+}
+
+.warming::before, .warming::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 0.2em solid transparent;
+  top: 0;
+  left: 0;
+  color: orangered;
+  animation: rotating 10s infinite;
+}
+
+.warming::before {
+  border-top-color: currentColor;
+  border-right-color: currentColor;
+  z-index: -1;
+}
+
+.warming::after {
+  border-left-color: currentColor;
+  border-bottom-color: currentColor;
+  box-shadow: 0.3em 0.3em 0.3em rgba(20%, 20%, 20%, 0.8);
+}
+
+@keyframes rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
