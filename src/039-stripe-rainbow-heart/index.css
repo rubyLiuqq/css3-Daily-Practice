@@ -1,0 +1,73 @@
+html body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, navy, black);;
+}
+
+.heart {
+  width: 280px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 宽度】、高度、模糊度、颜色 */
+.heart span {
+  width: 20px;
+  height: var(--h);
+  background-color: var(--c);
+  border-radius: 0.5em;
+  position: relative;
+  top: var(--top);
+  animation: heart 5s infinite;
+}
+
+@keyframes heart {
+  0%, 30% {
+    top: var(--top);
+    background-color: var(--c);
+    height: var(--h);
+    width: 20px;
+    filter: blur(0);
+  }
+  60%, 70% {
+    top: 25%;
+    width: 0.1em;
+    height: 50%;
+    filter: blur(5px);
+    background-color: whitesmoke;
+  }
+}
+
+span:nth-of-type(1),
+span:nth-of-type(9) {
+  --c: orangered;
+  --h: 60px;
+  --top: 2.2em;
+}
+span:nth-of-type(2),
+span:nth-of-type(8) {
+  --c: gold;
+  --h: 120px;
+  --top: 0.6em;
+}
+span:nth-of-type(3),
+span:nth-of-type(7) {
+  --c: limegreen;
+  --h: 160px;
+  --top: 0;
+}
+span:nth-of-type(4),
+span:nth-of-type(6) {
+  --c: dodgerblue;
+  --h: 180px;
+  --top: 0.8em;
+}
+span:nth-of-type(5) {
+  --c: mediumpurple;
+  --h: 188px;
+  --top: 1.6em;
+}
