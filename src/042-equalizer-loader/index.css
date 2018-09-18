@@ -1,0 +1,81 @@
+html body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.equalizer {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.equalizer span {
+  height: 100%;
+  width: 24px;
+  background-image: linear-gradient(red, yellow, green);
+  animation: up-and-down 2s linear infinite calc(-1 * 0.4s * var(--n));
+}
+
+span:nth-of-type(1) {
+  --n: 1;
+}
+span:nth-of-type(2) {
+  --n: 2;
+}
+span:nth-of-type(3) {
+  --n: 3;
+}
+span:nth-of-type(4) {
+  --n: 4;
+}
+span:nth-of-type(5) {
+  --n: 5;
+}
+
+@keyframes up-and-down {
+  0%, 100% {
+		clip-path: inset(27% 0 0 0);
+	}
+
+	10% {
+		clip-path: inset(17% 0 0 0);
+	}
+
+	20% {
+		clip-path: inset(55% 0 0 0);
+	}
+
+	30% {
+		clip-path: inset(30% 0 0 0);
+	}
+
+	40% {
+		clip-path: inset(13% 0 0 0);
+	}
+
+	50% {
+		clip-path: inset(38% 0 0 0);
+	}
+
+	60% {
+		clip-path: inset(80% 0 0 0);
+	}
+
+	70% {
+		clip-path: inset(21% 0 0 0);
+	}
+
+	80% {
+		clip-path: inset(0% 0 0 0);
+	}
+
+	90% {
+		clip-path: inset(36% 0 0 0);
+	}
+}
