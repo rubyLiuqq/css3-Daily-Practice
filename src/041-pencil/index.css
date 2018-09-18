@@ -1,0 +1,72 @@
+html body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightskyblue;
+}
+
+.pencil {
+  width: 600px;
+  position: relative;
+  font-size: 12px;
+  filter: drop-shadow(5px 10px 3px gray);
+}
+
+.taper::before, .taper::after {
+  content: '';
+  position: absolute;
+  left: -4em;
+  border-style: solid;
+  border-width: 21px 48px;
+}
+
+.taper::before {
+  border-color: transparent burlywood transparent transparent;
+}
+
+.taper::after {
+  border-color: transparent black transparent transparent;
+  transform: scale(0.3);
+}
+
+.barrel {
+  width: 480px;
+  position: absolute;
+  height: 18px;
+  left: 4em;
+  line-height: 18px;
+  background-color: green;
+  color: silver;
+  border-top: 12px solid forestgreen;
+  border-bottom: 12px solid darkgreen;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+}
+
+.eraser {
+  width: 72px;
+  height: 18px;
+  position: absolute;
+  right: 0;
+  background-color: lightpink;
+  border-top: 12px solid pink;
+  border-bottom: 12px solid lightcoral;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+.eraser::before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 0;
+  top: -12px;
+  background-color: silver;
+  border-top: 12px solid lightgray;
+  border-bottom: 12px solid gray;
+}
