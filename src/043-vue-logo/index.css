@@ -1,0 +1,66 @@
+html body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, lightgreen, white);
+}
+
+.vue {
+  width: 588px;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.outer, .middle, .inner {
+  position: absolute;
+  border-color: transparent;
+  border-style: solid;
+  border-top-width: var(--h);
+  border-left-width: calc(var(--w) / 2);
+  border-right-width: calc(var(--w) / 2);
+  border-top-color: var(--c);
+  animation: in-and-out 3s linear infinite;
+}
+
+.outer {
+  --w: 588px;
+  --h: 480px;
+  --c: #42b883;
+}
+
+.middle {
+  --w: 384px;
+  --h: 315px;
+  --c: #35495e;
+  animation-delay: 0.1s;
+}
+
+.inner {
+  --w: 192px;
+  --h: 159px;
+  --c: white;
+  animation-delay: 0.2s;
+}
+
+@keyframes in-and-out {
+  0%, 5% {
+		top: -100%;
+	}
+
+	15%, 80% {
+		top: 0;
+		filter: opacity(1);
+		transform: scale(1);
+	}
+
+	90%, 100% {
+		top: 100%;
+		filter: opacity(0);
+		transform: scale(0);
+	}
+}
