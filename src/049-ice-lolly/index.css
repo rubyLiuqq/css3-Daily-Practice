@@ -1,0 +1,71 @@
+html body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: darkslategray;
+}
+
+.ice-lolly {
+  font-size: 10px;
+}
+
+.flavors {
+  width: 19em;
+  height: 26em;
+  border-radius: 8em 8em 1em 1em;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.flavors::before {
+  content: '';
+  position: absolute;
+  width: 140%;
+  height: 120%;
+  z-index: -1;
+  transform: rotate(-25deg);
+  left: -20%;
+  background-image: linear-gradient( hotpink 0%, hotpink 25%, deepskyblue 25%, deepskyblue 50%, gold 50%, gold 75%, lightgreen 75%, lightgreen 100%);
+  animation: moving 100s linear infinite;
+  animation-play-state: paused;
+}
+.flavors::after {
+  content: '';
+  position: absolute;
+  width: 2em;
+  height: 17em;
+  background-color: rgba(255, 255, 255, 0.5);
+  left: 2em;
+  bottom: 2em;
+  border-radius: 1em;
+}
+
+@keyframes moving  {
+  to {
+    background-position: 0 1000vh;
+  }
+}
+
+.flavors:hover::before {
+  animation-play-state: running;
+}
+
+.stick {
+  position: relative;
+  width: 6em;
+  height: 10em;
+  background-color: sandybrown;
+  border-radius: 0 0 3em 3em;
+  left: calc(50% - 6em / 2);
+}
+
+.stick::before {
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: 3em;
+  background-color: sienna;
+}
