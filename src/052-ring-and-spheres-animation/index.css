@@ -1,0 +1,65 @@
+html body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: darkslategray;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  font-size: 20px;
+  animation: tunTurn 5s linear infinite;
+}
+
+.container .ring {
+  position: relative;
+  width: 10em;
+  height: 10em;
+  border: 1.5em solid paleturquoise;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.spheres .sphere {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: -20%;
+  left: -20%;
+  animation: tunTurn 1.5s linear infinite,
+    overlapping 1.5s linear infinite;
+}
+
+.spheres .sphere::before {
+  content: '';
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: lightseagreen;
+}
+
+.spheres .sphere:nth-of-type(2) {
+  animation-delay: -0.5s;
+}
+.spheres .sphere:nth-of-type(3) {
+  animation-delay: -1s;
+}
+
+@keyframes tunTurn {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes overlapping {
+  to {
+    z-index: 2;
+  }
+}
