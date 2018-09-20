@@ -1,0 +1,55 @@
+html body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+
+.loader {
+  width: 10em;
+  height: 3em;
+  border: 0.3em solid silver;
+  border-radius: 3em;
+  font-size: 30px;
+  border-left-color: hotpink;
+  border-right-color: dodgerblue;
+  position: relative;
+  animation: turn 3s linear infinite;
+}
+
+@keyframes turn {
+  to {
+    transform: rotate(1turn)
+  }
+}
+
+.loader::after {
+  content: '';
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  background-color: dodgerblue;
+  animation: ballRuning 3s linear infinite,
+    changeColor 3s linear infinite;
+}
+
+@keyframes ballRuning {
+  50% {
+    left: 7em;
+  }
+}
+
+@keyframes changeColor {
+  55% {
+		background-color: dodgerblue;
+	}
+
+	5%, 50% {
+		background-color: hotpink;
+	}
+}
