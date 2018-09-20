@@ -1,0 +1,83 @@
+html body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(gray, lightyellow, gray);
+}
+
+.butterfly {
+  width: 10em;
+  height: 10em;
+  font-size: 10px;
+  position: relative;
+}
+
+.butterfly::before, .butterfly::after {
+  content: '';
+  position: absolute;
+}
+
+.butterfly::before {
+  width: 24em;
+  height: 18em;
+  top: -2.5em;
+  left: -8em;
+  background-color: black;
+  border: inset 0.2em silver;
+}
+
+.butterfly::after {
+  width: 40em;
+  height: 30em;
+  background-color: lightyellow;
+  z-index: -1;
+  top: -11em;
+  left: -18em;
+  border: 2em solid burlywood;
+  border-radius: 3em;
+  box-shadow: 0 0.3em 2em 0.4em rgba(0, 0, 0, 0.3), inset 0.4em 0.4em 0.1em 0.5em rgba(0, 0, 0, 0.4);
+}
+
+.left, .right {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+
+.right {
+  transform: rotateY(180deg) rotate(-90deg);
+  top: 0.4em;
+  left: 0.4em;
+}
+
+span {
+  border-radius: 50%;
+  position: absolute;
+}
+
+.left span:nth-of-type(1),
+.right span:nth-of-type(1) {
+  width: 5em;
+  height: 7em;
+  background-color: gold;
+}
+
+.left span:nth-of-type(2),
+.right span:nth-of-type(2) {
+  width: 5.5em;
+  height: 3.5em;
+  background-color: orangered;
+  filter: opacity(0.6);
+  top: 5em;
+  left: -2.5em;
+}
+
+.left span:nth-of-type(3),
+.right span:nth-of-type(3) {
+  width: 6em;
+  height: 6em;
+  border-right: 0.3em solid orangered;
+  top: -0.5em;
+}
