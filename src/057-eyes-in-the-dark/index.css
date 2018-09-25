@@ -1,0 +1,46 @@
+html body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+
+.eye {
+  width: 40em;
+  height: 10em;
+  font-size: 10px;
+  position: relative;
+}
+
+.left, .right {
+  position: absolute;
+  box-sizing: border-box;
+  width: 15em;
+  height: 10em;
+  border: solid white;
+  border-width: 0 5em;
+  animation: eye 2s linear infinite;
+}
+
+.left {
+  left: 0;
+  border-radius: 50% 0;
+  transform: rotate(25deg);
+}
+
+.right {
+  right: 0;
+  border-radius: 0 50%;
+  transform: rotate(-25deg);
+}
+
+@keyframes eye {
+  40%, 60% {
+    border-width: 0 5em;
+  }
+  50% {
+    border-width: 0 7.5em;
+  }
+}
