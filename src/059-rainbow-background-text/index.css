@@ -1,0 +1,26 @@
+html body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+
+p {
+  font-size: 20vw;
+  text-transform: uppercase;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-image: linear-gradient( to right, orangered, orange, gold, lightgreen, cyan, dodgerblue, mediumpurple, hotpink, orangered);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: moving 30s linear infinite;
+}
+
+@keyframes moving {
+  to {
+    background-position: -2000vw;
+  }
+}
