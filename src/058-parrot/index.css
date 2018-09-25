@@ -1,0 +1,79 @@
+html body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: darkslategray;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.parrot {
+  width: 10em;
+  height: 10em;
+  font-size: 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.parrot > * {
+  position: absolute;
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+
+.outer {
+  width: 100%;
+  height: 100%;
+  border: 1em solid;
+  border-color: transparent transparent  orangered tomato;
+  border-radius: 50%;
+}
+
+.parrot:hover .outer {
+  transform: rotate(calc(180deg + 45deg));
+  border-color: transparent transparent lightseagreen darkcyan;
+}
+
+.middle {
+  width: 80%;
+  height: 80%;
+  border: 4em solid;
+  border-color: gold transparent gainsboro white;
+  border-radius: 50%;
+}
+
+.parrot:hover .middle {
+  transform: rotate(calc(45deg - 180deg));
+  border-color: transparent orange white gainsboro;
+}
+
+.inner {
+  width: 40%;
+  height: 40%;
+  border: 2em solid;
+  border-color: transparent orange transparent transparent;
+  border-radius: 50%;
+}
+
+.parrot:hover .inner {
+  transform: rotate(calc(45deg + 90deg));
+  border-color: transparent gold transparent transparent
+}
+
+.inner::before {
+  content: '';
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background: black;
+  left: -2em;
+  top: -0.5em;
+}
