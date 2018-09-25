@@ -1,0 +1,88 @@
+html body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right bottom, teal, steelblue);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  font-size: 10px;
+  width: 30em;
+  height: 30em;
+  background: snow;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: moving  3s infinite alternate;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 14em;
+  height: 14em;
+  border: 0.6em solid transparent;
+  border-radius: 50%;
+  border-left-color: white;
+  transform: rotate(-15deg);
+}
+
+.container .pot {
+  width: 17em;
+  height: 17em;
+  background-color: deepskyblue;
+  border-radius: 50%;
+  border-right: 1em solid steelblue;
+  position: relative;
+}
+
+.pot::before, .pot::after {
+  content: '';
+  position: absolute;
+}
+
+.pot::before {
+  width: 17em;
+  height: 8.5em;
+  background-color: hotpink;
+  border-radius: 8.5em 8.5em 0 0;
+  border-right: 1em solid palevioletred;
+}
+
+.pot::after {
+  width: 8.5em;
+  height: 2em;
+  background-color: hotpink;
+  left: 4.25em;
+  top: -0.6em;
+}
+
+.handle {
+  width: 17em;
+  height: 10em;
+  position: absolute;
+  top: 2.4em;
+  left: 2.6em;
+  border: 1.4em solid transparent;
+  border-top-color: black;
+  border-right-color: black;
+  border-radius: 1.4em;
+}
+
+@keyframes moving {
+  0%, 25% {
+    transform: rotate(0deg);
+  }
+  75%, 100% {
+    transform: rotate(-45deg);
+  }
+}
