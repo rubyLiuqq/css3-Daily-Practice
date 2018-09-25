@@ -1,0 +1,39 @@
+html body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: darkslategray;
+}
+
+.chess {
+  font-size: 32px;
+  background: burlywood;
+  border: 0.2em solid burlywood;
+  box-shadow: 0 0.3em 2em 0.4em rgba(0, 0, 0, 0.3);
+}
+
+ul {
+  display: table;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+  display: table-cell;
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+}
+
+ul:nth-child(odd) li:nth-child(even),
+ul:nth-child(even) li:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+ul:nth-child(n+7),
+ul:nth-child(n+6) {
+  color: white;
+}
