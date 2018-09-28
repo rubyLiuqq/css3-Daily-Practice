@@ -1,0 +1,59 @@
+html body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+
+.loader {
+  font-size: 30px;
+  width: 10em;
+  height: 10em;
+  border-top: 0.3em solid hotpink;
+  border-radius: 50%;
+  position: relative;
+  animation: rotating 2s ease-in-out infinite;
+  --direction: 1;
+}
+
+.loader::before, .loader::after {
+  content: '';
+  position: absolute;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  top: -0.2em;
+}
+
+.loader::before {
+  border-top: 0.3em solid dodgerblue;
+  transform: rotate(120deg);
+}
+
+.loader::after {
+  border-top: 0.3em solid yellow;
+  transform: rotate(-120deg);
+}
+
+.loader span {
+  color: white;
+  position: absolute;
+  width: 10em;
+  height: 10em;
+  line-height: 10em;
+  text-align: center;
+  font-family: sans-serif;
+  animation: rotating 2s linear infinite;
+  --direction: -1;
+}
+
+@keyframes rotating {
+  50% {
+    transform: rotate(calc(180deg * var(--direction)));
+  }
+  100% {
+    transform: rotate(calc(360deg * var(--direction)));
+  }
+}
