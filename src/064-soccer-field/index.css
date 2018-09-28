@@ -1,0 +1,45 @@
+html body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: green;
+}
+
+.container {
+  width: 80%;
+  height: 80%;
+  font-size: 5px;
+  --line: 0.3em solid white;
+  border: var(--line);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  width: 0.3em;
+  background: white;
+  height: 100%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 16em;
+  height: 16em;
+  border: var(--line);
+  border-radius: 50%;
+}
+
+.field {
+  width: 2.5em;
+  height: 2.5em;
+  background: white;
+  border-radius: 50%;
+}
+
