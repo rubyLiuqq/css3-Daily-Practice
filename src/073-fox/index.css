@@ -1,0 +1,119 @@
+html body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --bc: teal;
+  background: var(--bc);
+}
+
+.fox {
+  --c: chocolate;
+  width: 7em;
+  height: 9em;
+  font-size: 30px;
+  position: relative;
+  color: var(--c);
+}
+
+.head {
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+  background-color: currentColor;
+  position: absolute;
+}
+
+.head .faces::before, .head .faces::after {
+  content: '';
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  background-color: white;
+  border-radius: 0 100%;
+  top: 3em;
+}
+
+.head .faces::after {
+  right: 0;
+  transform: rotate(-90deg);
+}
+
+.head .eyes::before, .head .eyes::after {
+  content: '';
+  position: absolute;
+  border: 0.3em solid;
+  border-color: black black transparent transparent;
+  border-radius: 50%;
+  top: 4.5em;
+}
+
+.head .eyes::before {
+  left: 1em;
+}
+
+.head .eyes::after {
+  right: 1em;
+  transform: rotate(-90deg);
+}
+
+.head .ears::before, .head .ears::after {
+  content: '';
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  background-color: currentColor;
+  filter: brightness(1.25);
+  border-radius: 0 100% 0 0;
+  z-index: -1;
+}
+
+.head .ears::after {
+  right: 0;
+  transform: rotate(-90deg);
+}
+
+.head .nose {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  background-color: black;
+  border-radius: 50%;
+  top: calc(6em - 1em / 2);
+  right: calc((6em - 1em) / 2);
+  transform: scale(0.9);
+  z-index: 2;
+}
+
+.tail {
+  position: absolute;
+  width: 7em;
+  height: 7em;
+  background: currentColor;
+  border-radius: 50%;
+  bottom: 0;
+  left: -1em;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.tail::before, .tail::after {
+  content: '';
+  position: absolute;
+}
+
+.tail::before {
+  width: 3.5em;
+  height: 3.5em;
+  background: var(--bc);
+  z-index: 2;
+}
+
+.tail::after {
+  width: 1em;
+  height: 1em;
+  background: white;
+  border-radius: 0 0 100% 0;
+  bottom: calc(7em / 2 - 1em);
+}
