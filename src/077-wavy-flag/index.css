@@ -1,0 +1,79 @@
+html body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+
+.flag {
+  width: 10em;
+  height: 15em;
+  position: relative;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transform: perspective(500px) rotateY(-20deg);
+}
+
+.flag span {
+  width: 0.25em;
+  height: inherit;
+  background-color: ghostwhite;
+  animation: wave 1.5s ease-in-out infinite alternate;
+  animation-delay: calc(var(--n) * -0.1s);
+}
+.flag span:nth-of-type(1) {
+  --n: 1;
+}
+.flag span:nth-of-type(2) {
+  --n: 2;
+}
+.flag span:nth-of-type(3) {
+  --n: 3;
+}
+.flag span:nth-of-type(4) {
+  --n: 4;
+}
+.flag span:nth-of-type(5) {
+  --n: 5;
+}
+.flag span:nth-of-type(6) {
+  --n: 6;
+}
+.flag span:nth-of-type(7) {
+  --n: 7;
+}
+.flag span:nth-of-type(8) {
+  --n: 8;
+}
+.flag span:nth-of-type(9) {
+  --n: 9;
+}
+.flag span:nth-of-type(10) {
+  --n: 10;
+}
+.flag span:nth-of-type(11) {
+  --n: 11;
+}
+.flag span:nth-of-type(12) {
+  --n: 12;
+}
+.flag span:nth-of-type(13) {
+  --n: 13;
+}
+.flag span:nth-of-type(14) {
+  --n: 14;
+}
+.flag span:nth-of-type(15) {
+  --n: 15;
+}
+
+@keyframes wave {
+  to {
+    transform: translateX(2em);
+    background-color: deepskyblue;
+  }
+}
