@@ -1,0 +1,76 @@
+html body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 30em;
+  font-size: 12px;
+  color: lime;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: changeColor 5s linear infinite;
+}
+
+.container span {
+  position: absolute;
+  --d: calc(5em + (var(--n) - 1) * 3em);
+  width: var(--d);
+  height: var(--d);
+  border-radius: 50%;
+  border-style: solid;
+  border-color: currentColor transparent;
+  border-width: 1em 1em 0 0;
+  animation: turning linear infinite;
+  animation-duration: calc(5s / (9 - var(--n) + 1));
+}
+
+.container span:nth-of-type(1) {
+  --n: 1;
+}
+.container span:nth-of-type(2) {
+  --n: 2;
+}
+.container span:nth-of-type(3) {
+  --n: 3;
+}
+.container span:nth-of-type(4) {
+  --n: 4;
+}
+.container span:nth-of-type(5) {
+  --n: 5;
+}
+.container span:nth-of-type(6) {
+  --n: 6;
+}
+.container span:nth-of-type(7) {
+  --n: 7;
+}
+.container span:nth-of-type(8) {
+  --n: 8;
+}
+.container span:nth-of-type(9) {
+  --n: 9;
+}
+
+@keyframes changeColor {
+  to  {
+    filter: hue-rotate(1turn);
+  }
+}
+
+@keyframes turning {
+  to {
+    transform: rotate(1turn);
+  }
+}
