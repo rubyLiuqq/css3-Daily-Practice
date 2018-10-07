@@ -1,0 +1,48 @@
+html body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+
+.letter {
+  width: 5em;
+  height: 13em;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.letter::before {
+  content: '';
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  background-color: orangered;
+  animation: jump 1s ease-in-out infinite;
+}
+
+.letter::after {
+  content: '';
+  width: 5em;
+  height: 8em;
+  border-radius: 0.5em;
+  background-color: orange;
+  animation: rect 1s ease-in-out infinite;
+}
+@keyframes jump {
+  20%, 80% {
+    transform: translateY(-2em);
+  }
+  50% {
+    transform: translateY(calc((8em - 5em) / 2));
+  }
+}
+
+@keyframes rect {
+  to {
+    transform: rotate(180deg);
+  }
+}
