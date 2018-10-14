@@ -1,0 +1,150 @@
+html body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to left bottom, linen, tan);;
+}
+
+.camera {
+  width: 20em;
+  height: 23em;
+  font-size: 10px;
+  border-radius: 2em;
+  position: relative;
+  background:
+    radial-gradient(
+      circle at 3.6em 7em,
+      tomato 1em,
+      darkgray 1em, darkgray 1.2em,
+      transparent 1.2em
+    ),
+    radial-gradient(
+      circle at 17em 7em,
+      black 0.8em,
+    darkgray 0.8em, darkgray 1em,
+      transparent 1em
+    ),
+    linear-gradient(
+      transparent 18em,
+      #333 18em, #333 19.5em,
+      transparent 19.5em
+    ) no-repeat center / 80% 100%,
+    linear-gradient(
+      blanchedalmond 10em,
+      wheat 10em, wheat 14em,
+      tan 14em
+    );
+}
+
+.camera::before {
+  content: '';
+  position: absolute;
+  width: 4.5em;
+  height: 2em;
+  background-color: #333;
+  border-radius: 0.5em;
+  top: 1.5em;
+  left: 1.5em;
+}
+
+.camera::after {
+  content: '';
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  background: radial-gradient(
+  teal 10%,
+  #333 30%,
+    transparent 40%
+  ), #333;
+  right: 1.5em;
+  top: 1.5em;
+  border-radius: 0.3em;
+}
+
+.camera .lens {
+  position: absolute;
+  width: 8em;
+  height: 8em;
+  top: 3em;
+  left: 6em;
+  background:
+    radial-gradient(
+      circle at 60% 45%,
+      khaki 0.1em,
+      transparent 0.3em
+    ),
+    radial-gradient(
+      circle at 50% 40%,
+      khaki 0.3em,
+      transparent 0.5em
+    ),
+    radial-gradient(
+      cadetblue 2em,
+      #555 2em, #555 2.5em,
+      #333 2.5em, #333 4em
+    );
+  border-radius: 50%;
+}
+
+.camera .lens::before, .camera .lens::after {
+  content: '';
+  position: absolute;
+  width: 5em;
+  height: 0.1em;
+  background-color: #333;
+  left: 1.5em;
+  animation: take-a-photo 3s infinite;
+}
+
+@keyframes take-a-photo {
+  10% {
+    height: calc(50% - 1em);
+  }
+  20% {
+    height: 0.1em;
+  }
+}
+
+.lens::before {
+  top: 1em;
+}
+
+.lens::after {
+  bottom: 1em;
+}
+
+.camera .picture {
+  position: absolute;
+  width: inherit;
+  height: 0em;
+  top: 18em;
+  overflow: hidden;
+  animation: print 3s infinite;
+}
+
+@keyframes print {
+  30% {
+    height: 0;
+  }
+  80%, 100% {
+    height: 15em;
+  }
+}
+
+.camera .picture::before {
+  content: '';
+  position: absolute;
+  width: 15em;
+  height: 15em;
+  box-sizing: border-box;
+  background: linear-gradient(45deg, #555 50%, #444 50%);
+  border: solid linen;
+  border-width: 0 1em 2em;
+  left: 2.5em;
+  bottom: 0;
+}
+
+
