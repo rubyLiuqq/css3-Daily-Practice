@@ -1,0 +1,44 @@
+html body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: lightgoldenrodyellow;
+}
+
+.circles {
+  width: 10em;
+  height: 10em;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  transform-origin: 50% 50%;
+  animation: rotating 5s linear infinite;
+}
+
+.circles span {
+  position: absolute;
+  --diameter:  calc(10em - (var(--n) - 1) * 1em);
+  width: var(--diameter);
+  height: var(--diameter);
+  border-radius: 50%;
+}
+
+.circles span:nth-child(odd) {
+  background-color: darkred;
+}
+.circles span:nth-child(even) {
+  background-color: gold;
+}
+
+.circles span:nth-child(n+8) {
+  top: calc((var(--n) - 7) * 1em);
+}
+
+@keyframes rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
