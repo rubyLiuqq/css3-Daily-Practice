@@ -1,0 +1,44 @@
+html body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(black, maroon);
+}
+
+.flame {
+  width: 10em;
+  height: 12em;
+  font-size: 24px;
+  position: relative;
+}
+
+.flame span {
+  position: absolute;
+  width: 5em;
+  height: 5em;
+  background: radial-gradient( orangered 20%, rgba(255, 69, 0, 0) 70% );
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  left: calc((var(--n) - 1) * 5em / var(--particles));
+  animation: rise 1s ease-in infinite;
+  animation-delay: calc(var(--rnd) * 1s);
+  bottom: 0;
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(0) scale(1);
+    filter: opacity(0);
+  }
+
+  25% {
+    filter: opacity(1);
+  }
+
+  to {
+    transform: translateY(-10em) scale(0);
+    filter: opacity(0);
+  }
+}
