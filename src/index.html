@@ -1,279 +1,39 @@
-<!doctype html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>demo列表</title>
+<!DOCTYPE html><html lang="zh-CN"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>demo&#x5217;&#x8868;</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .banner {
+      width: 100%;
+      height: 100px;
+      background: linear-gradient(to right, white, pink, white);
+      text-transform: uppercase;
+      font-size: 40px;
+      text-align: center;
+      line-height: 100px;
+      font-weight: bold;
+      font-family: sans-serif;
+      color: tomato;
+      animation: change-color 10s linear infinite;
+    }
+
+    @keyframes change-color {
+      to {
+        filter: hue-rotate(1turn);
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <h1>demo列表</h1>
-  <ol>
-    <li>
-      <a href="/001-button-text-staggered-sliding-effects/index.html">button切换</a>
-    </li>
-    <li>
-      <a href="/002-rectangular-rotating-loader-animation/index.html">矩形旋转</a>
-    </li>
-    <li>
-      <a href="/003-border-dynamics/index.html">线性变换实现背景</a>
-    </li>
-    <li>
-      <a href="/004-metallic-glossy-3d-button-effects/index.html">按钮3D金属光泽显示</a>
-    </li>
-    <li>
-      <a href="/004-1-learn-3d/index.html">对3D效果的学习</a>
-    </li>
-    <li>
-      <a href="/005-sleek-sliding-toggle-checkbox/index.html">switch开关</a>
-    </li>
-    <li>
-      <a href="/007-3d-text-marquee-effects/index.html">3D文字跑马灯</a>
-    </li>
-    <li>
-      <a href="/008-charging-loader-animation/index.html">动画版的充电装载机</a>
-    </li>
-    <li>
-      <a href="/009-aimed-button-effects/index.html">瞄准文字特效</a>
-    </li>
-    <li>
-      <a href="/010-concentric-arc-rotating-loader-animation/index.html">同心弧旋转动画</a>
-    </li>
-    <li>
-      <a href="/011-ripple-pulse-loader-animation/index.html">纹波脉冲装载机动画</a>
-    </li>
-    <li>
-      <a href="/012-broken-text-effects/index.html">破碎的文字效果</a>
-    </li>
-    <li>
-      <a href="/013-hot-coffee-cup/index.html">一杯热咖啡</a>
-    </li>
-    <li>
-      <a href="/015-development-skills-card/index.html">技能卡开发</a>
-    </li>
-    <li>
-      <a href="/016-colorful-gradient-animated-border/index.html">多彩渐变的动画边框</a>
-    </li>
-    <li>
-      <a href="/017-swapping-colors-loader-animation/index.html">多彩的正方形旋转</a>
-    </li>
-    <li>
-      <a href="/018-stroke-morphing-404-effects/index.html">变形的404</a>
-    </li>
-    <li>
-      <a href="/019-split-text-menu-effects/index.html">拆分文本的菜单效果</a>
-    </li>
-    <li>
-      <a href="/020-pixel-animation-heart-shape/index.html">像素拼成的心形</a>
-    </li>
-    <li>
-      <a href="/021-a-text-sliding-effect-ui/index.html">一个文字滑动效果</a>
-    </li>
-    <li>
-      <a href="/023-reverse-text-color-menu-effects/index.html">hover转换菜单文字颜色</a>
-    </li>
-    <li>
-      <a href="/024-waves/index.html">浪花</a>
-    </li>
-    <li>
-      <a href="/025-comet-rotating-loader/index.html">彗星旋转装载机</a>
-    </li>
-    <li>
-      <a href="/026-set-off-paper-button-effects/index.html">Hover时纸张样式的menu</a>
-    </li>
-    <li>
-      <a href="/027-rainbow-loader/index.html">彩虹的动态加载</a>
-    </li>
-    <li>
-      <a href="/028-penrose-triangle/index.html">penrose三角</a>
-    </li>
-    <li>
-      <a href="/029-marquee-slash-animation/index.html">选取框斜线动画</a>
-    </li>
-    <li>
-      <a href="/030-swinging-signboard-effects/index.html">摆动的招牌</a>
-    </li>
-    <li>
-      <a href="/031-minimalist-ping-pong-animation/index.html">简约乒乓动画</a>
-    </li>
-    <li>
-      <a href="/032-hexagonal-button-effects/index.html">六角键效果</a>
-    </li>
-    <li>
-      <a href="/033-milk-text-effect/index.html">牛奶文字效果</a>
-    </li>
-    <li>
-      <a href="/034-box-border-stacking-effect/index.html">箱边界堆叠效果</a>
-    </li>
-    <li>
-      <a href="/035-panda/index.html">熊猫</a>
-    </li>
-    <li>
-      <a href="/035-radial-gradient/index.html">radial-gradient</a>
-    </li>
-    <li>
-      <a href="/036-solar-eclipse/index.html">日食</a>
-    </li>
-    <li>
-      <a href="/037-stroke-animation-button-effect/index.html">绚烂的菜单选择</a>
-    </li>
-    <li>
-      <a href="/038-stairs-lettering-effect/index.html">楼梯刻字效果</a>
-    </li>
-    <li>
-      <a href="/039-stripe-rainbow-heart/index.html">条纹彩虹心脏</a>
-    </li>
-    <li>
-      <a href="/040-notebook-page-flip-animation/index.html">笔记本翻页动画</a>
-    </li>
-    <li>
-      <a href="/041-pencil/index.html">铅笔</a>
-    </li>
-    <li>
-      <a href="/042-equalizer-loader/index.html">均衡器加载器</a>
-    </li>
-    <li>
-      <a href="/043-vue-logo/index.html">vue logo</a>
-    </li>
-    <li>
-      <a href="/044-background-transition-button-effect/index.html">背景过渡按钮效果</a>
-    </li>
-    <li>
-      <a href="/045-colorful-rhombus-loader/index.html">多彩菱形装载机</a>
-    </li>
-    <li>
-      <a href="/053-text-fade-loader/index.html">文字褪色装载机</a>
-    </li>
-    <li>
-      <a href="/054-chessboard/index.html">棋盘</a>
-    </li>
-    <li>
-      <a href="/055-sun-earth-and-moon-model/index.html">太阳地球和月亮模型</a>
-    </li>
-    <li>
-      <a href="/056-a-programmers-life/index.html">程序员生活</a>
-    </li>
-    <li>
-      <a href="/057-eyes-in-the-dark/index.html">黑暗中的眼</a>
-    </li>
-    <li>
-      <a href="/058-parrot/index.html">鹦鹉</a>
-    </li>
-    <li>
-      <a href="/059-rainbow-background-text/index.html">彩虹背景的文本</a>
-    </li>
-    <li>
-      <a href="/060-lego-brick/index.html">乐高砖</a>
-    </li>
-    <li>
-      <a href="/061-coffee-pot/index.html">咖啡壶</a>
-    </li>
-    <li>
-      <a href="/062-steamer/index.html">蒸笼</a>
-    </li>
-    <li>
-      <a href="/063-toaster/index.html">烤面包机</a>
-    </li>
-    <li>
-      <a href="/064-soccer-field/index.html">足球场</a>
-    </li>
-    <li>
-      <a href="/065-swaying-loader/index.html">摇曳装载机</a>
-    </li>
-    <li>
-      <a href="/066-coffee-machine/index.html">咖啡机</a>
-    </li>
-    <li>
-      <a href="/067-lattice-dots-loader/index.html">点阵</a>
-    </li>
-    <li>
-      <a href="/068-color-cards/index.html">色卡</a>
-    </li>
-    <li>
-      <a href="/069-throw-the-box/index.html">扔盒子</a>
-    </li>
-    <li>
-      <a href="/070-wandered-jelly-monster/index.html">徘徊果冻怪物</a>
-    </li>
-    <li>
-      <a href="/071-8-shaped-dancing-loader/index.html">8形舞装载机</a>
-    </li>
-    <li>
-      <a href="/072-bubble-coloring-button/index.html">气泡着色按钮</a>
-    </li>
-    <li>
-      <a href="/073-fox/index.html">狐狸</a>
-    </li>
-    <li>
-      <a href="/074-macbook-pro/index.html">macbook pro</a>
-    </li>
-    <li>
-      <a href="/075-candle/index.html">蜡烛</a>
-    </li>
-    <li>
-      <a href="/076-hey-take-it-easy/index.html">简单的桌子</a>
-    </li>
-    <li>
-      <a href="/077-wavy-flag/index.html">波浪标志</a>
-    </li>
-    <li>
-      <a href="/078-windows-boot-screen/index.html">Windows的启动画面</a>
-    </li>
-    <li>
-      <a href="/079-mcdonalds/index.html">麦当劳</a>
-    </li>
-    <li>
-      <a href="/080-bicycle-wheel/index.html">车轮子</a>
-    </li>
-    <li>
-      <a href="/081-swapping-colors-rotating-animation/index.html">交换-颜色旋转动画</a>
-    </li>
-    <li>
-      <a href="/082-bouncing-letter-i/index.html">弹跳字母I</a>
-    </li>
-    <li>
-      <a href="/083-a-ball-climbing-the-stairs/index.html">球爬楼梯</a>
-    </li>
-    <li>
-      <a href="/084-need-for-speed-loader/index.html">加载loading</a>
-    </li>
-    <li>
-      <a href="/085-bouncing-ball/index.html">弹跳球</a>
-    </li>
-    <li>
-      <a href="/086-rotating-squares/index.html">旋转方块</a>
-    </li>
-    <li>
-      <a href="/087-refrigerator/index.html">冰箱</a>
-    </li>
-    <li>
-      <a href="/088-burning-flame/index.html">燃烧火焰</a>
-    </li>
-    <li>
-      <a href="/089-spiral-arms-particles-animation/index.html">螺旋颗粒动画</a>
-    </li>
-    <li>
-      <a href="/090-endless-hexagonal-space/index.html">无尽的六方空间</a>
-    </li>
-    <li>
-      <a href="/091-train-loader/index.html">列车装载机</a>
-    </li>
-    <li>
-      <a href="/092-saturn/index.html">土星</a>
-    </li>
-    <li>
-      <a href="/093-lightning-cable/index.html">充电线</a>
-    </li>
-    <li>
-      <a href="/094-polaroid-camera/index.html">拍立得</a>
-    </li>
-    <li>
-      <a href="/097-swagger-dots/index.html">移动的点</a>
-    </li>
-    <li>
-      <a href="/098-pig-in-angry-birds/index.html">奋斗的小鸟</a>
-    </li>
-  </ol>
-</body>
-</html>
+  <div class="banner">CSS3 Daily Practice</div>
+  <div class="content" id="content">
+  <iframe src="001-button-text-staggered-sliding-effects/index.html" width="30%" height="450"></iframe> <iframe src="002-rectangular-rotating-loader-animation/index.html" width="30%" height="450"></iframe> <iframe src="003-border-dynamics/index.html" width="30%" height="450"></iframe> <iframe src="004-1-learn-3d/index.html" width="30%" height="450"></iframe> <iframe src="004-metallic-glossy-3d-button-effects/index.html" width="30%" height="450"></iframe> <iframe src="005-sleek-sliding-toggle-checkbox/index.html" width="30%" height="450"></iframe> <iframe src="006-blue-dazzling-diamond/index.html" width="30%" height="450"></iframe> <iframe src="007-3d-text-marquee-effects/index.html" width="30%" height="450"></iframe> <iframe src="008-charging-loader-animation/index.html" width="30%" height="450"></iframe> <iframe src="009-aimed-button-effects/index.html" width="30%" height="450"></iframe> <iframe src="010-concentric-arc-rotating-loader-animation/index.html" width="30%" height="450"></iframe> <iframe src="011-ripple-pulse-loader-animation/index.html" width="30%" height="450"></iframe> <iframe src="012-broken-text-effects/index.html" width="30%" height="450"></iframe> <iframe src="013-hot-coffee-cup/index.html" width="30%" height="450"></iframe> <iframe src="015-development-skills-card/index.html" width="30%" height="450"></iframe> <iframe src="016-colorful-gradient-animated-border/index.html" width="30%" height="450"></iframe> <iframe src="017-swapping-colors-loader-animation/index.html" width="30%" height="450"></iframe> <iframe src="018-stroke-morphing-404-effects/index.html" width="30%" height="450"></iframe> <iframe src="019-split-text-menu-effects/index.html" width="30%" height="450"></iframe> <iframe src="020-pixel-animation-heart-shape/index.html" width="30%" height="450"></iframe> <iframe src="021-a-text-sliding-effect-ui/index.html" width="30%" height="450"></iframe> <iframe src="023-reverse-text-color-menu-effects/index.html" width="30%" height="450"></iframe> <iframe src="024-waves/index.html" width="30%" height="450"></iframe> <iframe src="025-comet-rotating-loader/index.html" width="30%" height="450"></iframe> <iframe src="026-set-off-paper-button-effects/index.html" width="30%" height="450"></iframe> <iframe src="028-penrose-triangle/index.html" width="30%" height="450"></iframe> <iframe src="027-rainbow-loader/index.html" width="30%" height="450"></iframe> <iframe src="030-swinging-signboard-effects/index.html" width="30%" height="450"></iframe> <iframe src="029-marquee-slash-animation/index.html" width="30%" height="450"></iframe> <iframe src="033-milk-text-effect/index.html" width="30%" height="450"></iframe> <iframe src="031-minimalist-ping-pong-animation/index.html" width="30%" height="450"></iframe> <iframe src="032-hexagonal-button-effects/index.html" width="30%" height="450"></iframe> <iframe src="034-box-border-stacking-effect/index.html" width="30%" height="450"></iframe> <iframe src="035-panda/index.html" width="30%" height="450"></iframe> <iframe src="036-solar-eclipse/index.html" width="30%" height="450"></iframe> <iframe src="037-stroke-animation-button-effect/index.html" width="30%" height="450"></iframe> <iframe src="038-stairs-lettering-effect/index.html" width="30%" height="450"></iframe> <iframe src="039-stripe-rainbow-heart/index.html" width="30%" height="450"></iframe> <iframe src="040-notebook-page-flip-animation/index.html" width="30%" height="450"></iframe> <iframe src="041-pencil/index.html" width="30%" height="450"></iframe> <iframe src="042-equalizer-loader/index.html" width="30%" height="450"></iframe> <iframe src="043-vue-logo/index.html" width="30%" height="450"></iframe> <iframe src="044-background-transition-button-effect/index.html" width="30%" height="450"></iframe> <iframe src="045-colorful-rhombus-loader/index.html" width="30%" height="450"></iframe> <iframe src="046-bounced-ball-effect/index.html" width="30%" height="450"></iframe> <iframe src="047-butterfly-specimen/index.html" width="30%" height="450"></iframe> <iframe src="048-mosquito-coil/index.html" width="30%" height="450"></iframe> <iframe src="049-ice-lolly/index.html" width="30%" height="450"></iframe> <iframe src="050-newtons-cradle/index.html" width="30%" height="450"></iframe> <iframe src="051-radar-scanning/index.html" width="30%" height="450"></iframe> <iframe src="052-ring-and-spheres-animation/index.html" width="30%" height="450"></iframe> <iframe src="054-chessboard/index.html" width="30%" height="450"></iframe> <iframe src="053-text-fade-loader/index.html" width="30%" height="450"></iframe> <iframe src="055-sun-earth-and-moon-model/index.html" width="30%" height="450"></iframe> <iframe src="056-a-programmers-life/index.html" width="30%" height="450"></iframe> <iframe src="057-eyes-in-the-dark/index.html" width="30%" height="450"></iframe> <iframe src="058-parrot/index.html" width="30%" height="450"></iframe> <iframe src="059-rainbow-background-text/index.html" width="30%" height="450"></iframe> <iframe src="060-lego-brick/index.html" width="30%" height="450"></iframe> <iframe src="061-coffee-pot/index.html" width="30%" height="450"></iframe> <iframe src="062-steamer/index.html" width="30%" height="450"></iframe> <iframe src="063-toaster/index.html" width="30%" height="450"></iframe> <iframe src="064-soccer-field/index.html" width="30%" height="450"></iframe> <iframe src="065-swaying-loader/index.html" width="30%" height="450"></iframe> <iframe src="066-coffee-machine/index.html" width="30%" height="450"></iframe> <iframe src="067-lattice-dots-loader/index.html" width="30%" height="450"></iframe> <iframe src="068-color-cards/index.html" width="30%" height="450"></iframe> <iframe src="069-throw-the-box/index.html" width="30%" height="450"></iframe> <iframe src="070-wandered-jelly-monster/index.html" width="30%" height="450"></iframe> <iframe src="071-8-shaped-dancing-loader/index.html" width="30%" height="450"></iframe> <iframe src="072-bubble-coloring-button/index.html" width="30%" height="450"></iframe> <iframe src="073-fox/index.html" width="30%" height="450"></iframe> <iframe src="074-macbook-pro/index.html" width="30%" height="450"></iframe> <iframe src="075-candle/index.html" width="30%" height="450"></iframe> <iframe src="076-hey-take-it-easy/index.html" width="30%" height="450"></iframe> <iframe src="077-wavy-flag/index.html" width="30%" height="450"></iframe> <iframe src="078-windows-boot-screen/index.html" width="30%" height="450"></iframe> <iframe src="079-mcdonalds/index.html" width="30%" height="450"></iframe> <iframe src="080-bicycle-wheel/index.html" width="30%" height="450"></iframe> <iframe src="081-swapping-colors-rotating-animation/index.html" width="30%" height="450"></iframe> <iframe src="082-bouncing-letter-i/index.html" width="30%" height="450"></iframe> <iframe src="083-a-ball-climbing-the-stairs/index.html" width="30%" height="450"></iframe> <iframe src="084-need-for-speed-loader/index.html" width="30%" height="450"></iframe> <iframe src="085-bouncing-ball/index.html" width="30%" height="450"></iframe> <iframe src="086-rotating-squares/index.html" width="30%" height="450"></iframe> <iframe src="087-refrigerator/index.html" width="30%" height="450"></iframe> <iframe src="088-burning-flame/index.html" width="30%" height="450"></iframe> <iframe src="089-spiral-arms-particles-animation/index.html" width="30%" height="450"></iframe> <iframe src="090-endless-hexagonal-space/index.html" width="30%" height="450"></iframe> <iframe src="091-train-loader/index.html" width="30%" height="450"></iframe> <iframe src="092-saturn/index.html" width="30%" height="450"></iframe> <iframe src="093-lightning-cable/index.html" width="30%" height="450"></iframe> <iframe src="094-polaroid-camera/index.html" width="30%" height="450"></iframe> <iframe src="096-spacecraft/index.html" width="30%" height="450"></iframe> <iframe src="097-swagger-dots/index.html" width="30%" height="450"></iframe> <iframe src="098-pig-in-angry-birds/index.html" width="30%" height="450"></iframe> <iframe src="099-roller-coaster-loader/index.html" width="30%" height="450"></iframe> <iframe src="100-shimmering-neon-text/index.html" width="30%" height="450"></iframe> <iframe src="101-pendulums/index.html" width="30%" height="450"></iframe> <iframe src="102-little-buddha/index.html" width="30%" height="450"></iframe> <iframe src="103-surveillance-eye/index.html" width="30%" height="450"></iframe> <iframe src="104-truck-loader/index.html" width="30%" height="450"></iframe> <iframe src="105-moon-rabbit/index.html" width="30%" height="450"></iframe> <iframe src="157-chessboard-illusion/index.html" width="30%" height="450"></iframe> <iframe src="158-umbrella-toggle/index.html" width="30%" height="450"></iframe> <iframe src="159-apple-devices-slide-show/index.html" width="30%" height="450"></iframe> <iframe src="160-opening-popup-animation/index.html" width="30%" height="450"></iframe> <iframe src="161-chaplin/index.html" width="30%" height="450"></iframe></div>
 
+
+
+</body></html>
